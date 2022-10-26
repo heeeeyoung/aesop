@@ -57,17 +57,46 @@ img {
 
 /* 100% */
 
-@media (max-width:1200px) {
+
+@media (max-width:1600px) {
   .inner {
-    max-width: calc(100% - 300px);
+    max-width: calc(100% - 160px);
+  }
+
+  /* margin은 잡혀있어서 넣을 필요 없음 */
+}
+
+@media (max-width:1400px) {
+  .inner {
+    max-width: calc(100% - 140px);
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:1200px) {
+  .inner {
+    max-width: calc(100% - 120px);
+  }
+}
+
+@media (max-width:1024px) {
   .inner {
     max-width: calc(100% - 100px);
   }
 }
+
+@media (max-width:768px) {
+
+  html.fp-enabled,
+  .fp-enabled body {
+    overflow-x: hidden !important;
+  }
+
+  .inner {
+    max-width: calc(100% - 40px);
+  }
+
+}
+
 
 
 #header {
@@ -165,7 +194,6 @@ img {
 }
 
 
-
 .depth2 .depth2_bg {
   background: #EFEFE4;
   position: fixed;
@@ -245,6 +273,9 @@ img {
   }
 }
 
+
+
+
 @media (max-width:768px) {
   #header .login {
     display: none;
@@ -257,10 +288,72 @@ img {
   #header .ham img {
     width: 30px;
   }
+
+
+  #header .gnb_wrap .left .gnb {
+    width: 100vw;
+  }
+
+  #header .gnb_wrap .left .gnb>li {
+    font-size: 4rem;
+  }
+
+  #header .gnb_wrap .left .gnb>li span {
+    font-size: 1.8rem;
+  }
+
+  #header .gnb_wrap .right {
+    position: absolute;
+    left: 0vw;
+    top: 60vw;
+  }
+
+  #header .gnb_wrap .ham_close {
+    position: absolute;
+    right: 3%;
+    top: 90%;
+  }
+
+
+  .depth2 .depth2_left ul {
+    width: 100vw;
+  }
+
+  .depth2 .depth2_left ul>li {
+    font-size: 3.6rem;
+  }
+
+
+  .depth2 .depth2_left ul>li span {
+    padding-left: 10px;
+    font-size: 1.8rem;
+  }
+
+  .depth2 .depth2_right {
+    display: none;
+  }
+
+  .depth2 .depth2_right img {
+    display: block;
+    width: 100%;
+  }
+
+  .depth2 .depth2_bg .btn_close {
+    position: absolute;
+    right: 3%;
+    top: 90%;
+  }
+
+  .depth2 .depth2_02 .depth2_left ul>li span {
+    font-size: 3.6rem;
+  }
+
+  .depth2 .depth2_03 .depth2_left ul>li span {
+    font-size: 3.6rem;
+  }
+
+
 }
-
-
-
 
 
 #sub_visual {
@@ -405,6 +498,8 @@ img {
 }
 
 
+
+
 #footer {
   background: #282622;
   color: #EFEFE4;
@@ -416,6 +511,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
 
 #footer .footer_right .number {
   font-size: 4.8rem;
@@ -453,4 +549,41 @@ img {
   font-size: 1.1rem;
   line-height: 16.5px;
   color: rgba(239, 239, 228, 0.5);
+}
+
+.gotop {
+  position: fixed;
+  top: 100px;
+  bottom: 100px;
+}
+
+
+@media (max-width:768px) {
+  #footer .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  #footer .footer_right .number {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+
+
+  #footer .footer_right .email {
+    font-size: 2rem;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  #footer .footer_logo {
+    padding: 50px;
+  }
+
+  #footer .footer_left {
+    transform: translateX(0%);
+    text-align: center;
+  }
+
 }

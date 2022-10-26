@@ -28,7 +28,7 @@
 
 
 body {
-  font-family: 'Optima', 'Nanum Myeongjo';
+  font-family: 'Optima', 'Nanum Myeongjo', serif;
   font-size: 1.6rem;
   line-height: 1.5;
   color: #000;
@@ -563,7 +563,6 @@ video {
   top: 25vw;
   width: 45%;
   text-align: right;
-  background: red;
 }
 
 
@@ -761,7 +760,7 @@ video {
   font-size: 10rem;
   transform: rotate(-90deg);
   position: absolute;
-  right: 33vw;
+  right: 18vw;
   font-family: 'Optima', serif;
   font-weight: 400;
 }
@@ -963,9 +962,6 @@ video {
   background: #EFEFE4;
 }
 
-#gift .gift_img {
-  width: 50vw;
-}
 
 #gift .gift_txt {
   width: 70vw;
@@ -1008,7 +1004,7 @@ video {
   font-size: 10rem;
   transform: rotate(90deg);
   position: absolute;
-  left: 0vw;
+  left: -15vw;
   top: 0;
   z-index: 99999999;
   font-family: 'Optima', serif;
@@ -1024,7 +1020,7 @@ video {
 }
 
 #gift .gift_top .textbox {
-  padding: 30% 10%;
+  padding: 20vw 10vw;
 }
 
 
@@ -1033,6 +1029,7 @@ video {
   z-index: 99999;
   left: 45vw;
   top: 0;
+  width: 50vw;
 }
 
 
@@ -1052,10 +1049,11 @@ video {
   z-index: 99999;
   left: 5vw;
   top: 0;
+  width: 50vw;
 }
 
 #gift .gift_bottom .textbox {
-  padding: 20%;
+  padding: 20vw 10vw;
   text-align: right;
 }
 
@@ -1156,33 +1154,31 @@ video {
 
 
   #gift .gift_top .gift_img {
-    left: 15%;
-    width: 80vw;
+    left: 0;
+    top: 0;
+    width: 100%;
   }
 
   #gift .gift_top .textbox {
     position: absolute;
     top: 60%;
-    left: 5%;
-    padding: 0;
-    width: 100vw;
+    left: 0;
+    padding: 30px;
   }
 
 
   #gift .gift_bottom .gift_img {
-    left: 15%;
+    left: 0;
     top: 0;
-    width: 80vw;
+    width: 100%;
   }
 
   #gift .gift_bottom .textbox {
     position: absolute;
     top: 60%;
-    left: 0vw;
-    padding: 0;
+    right: 0vw;
+    padding: 0 50px;
   }
-
-
 }
 
 
@@ -1473,6 +1469,7 @@ video {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 #sto .store_txt {
